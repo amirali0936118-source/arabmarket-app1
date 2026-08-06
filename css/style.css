@@ -176,3 +176,114 @@ body{
     padding:15px 25px;
     border-radius:30px;
 }
+
+/* ===== Add Page Like Divar ===== */
+
+.add-page{
+    width:95%;
+    max-width:600px;
+    margin:20px auto;
+}
+
+
+.ad-form{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+}
+
+
+.ad-form h3{
+
+    margin-bottom:20px;
+
+    color:#16834b;
+
+}
+
+
+.ad-form label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:7px;
+
+    font-weight:bold;
+
+}
+
+
+.ad-form input,
+.ad-form select,
+.ad-form textarea{
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-family:inherit;
+
+    font-size:15px;
+
+}
+
+
+.ad-form textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+
+
+#imagePreview img{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-top:10px;
+
+}
+
+
+
+.publish-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#16834b;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
