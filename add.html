@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>إضافة إعلان | Arab Market</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<h2>إضافة إعلان</h2>
+
+</header>
+
+
+
+<main class="container">
+
+
+<form id="adForm">
+
+
+<label>
+عنوان الإعلان
+</label>
+
+<input id="title" required>
+
+
+
+<label>
+السعر
+</label>
+
+<input id="price" type="number" required>
+
+
+
+<label>
+التصنيف
+</label>
+
+<select id="category">
+
+<option>سيارات</option>
+<option>عقارات</option>
+<option>هواتف</option>
+<option>إلكترونيات</option>
+<option>وظائف</option>
+
+</select>
+
+
+
+<label>
+المدينة
+</label>
+
+<input id="city" required>
+
+
+
+<label>
+رقم الهاتف
+</label>
+
+<input id="phone" required>
+
+
+
+<label>
+وصف الإعلان
+</label>
+
+<textarea id="description"></textarea>
+
+
+
+<button class="add-button">
+
+نشر الإعلان
+
+</button>
+
+
+</form>
+
+
+</main>
+
+
+
+<script src="js/storage.js"></script>
+
+<script src="js/add.js"></script>
+
+
+</body>
+
+</html>
