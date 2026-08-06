@@ -4,12 +4,13 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>إضافة إعلان | Arab Market</title>
 
 <link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -25,30 +26,33 @@
 
 
 
-<main class="container">
+<main class="add-page">
 
 
-<form id="adForm">
+<form id="adForm" class="ad-form">
+
+
+
+<h3>
+معلومات الإعلان
+</h3>
+
 
 
 <label>
 عنوان الإعلان
 </label>
 
-<input id="title" required>
+<input 
+id="title"
+type="text"
+placeholder="مثال: سيارة تويوتا للبيع"
+required>
 
 
 
 <label>
-السعر
-</label>
-
-<input id="price" type="number" required>
-
-
-
-<label>
-التصنيف
+القسم
 </label>
 
 <select id="category">
@@ -57,9 +61,22 @@
 <option>عقارات</option>
 <option>هواتف</option>
 <option>إلكترونيات</option>
+<option>أثاث</option>
 <option>وظائف</option>
+<option>خدمات</option>
 
 </select>
+
+
+
+<label>
+السعر
+</label>
+
+<input
+id="price"
+type="number"
+placeholder="السعر">
 
 
 
@@ -67,7 +84,17 @@
 المدينة
 </label>
 
-<input id="city" required>
+<select id="city">
+
+<option>دبي</option>
+<option>الرياض</option>
+<option>بغداد</option>
+<option>القاهرة</option>
+<option>الكويت</option>
+<option>الدوحة</option>
+<option>أبوظبي</option>
+
+</select>
 
 
 
@@ -75,7 +102,25 @@
 رقم الهاتف
 </label>
 
-<input id="phone" required>
+<input
+id="phone"
+type="tel"
+placeholder="05xxxxxxxx">
+
+
+
+<label>
+صور الإعلان
+</label>
+
+<input
+id="image"
+type="file"
+accept="image/*">
+
+
+
+<div id="imagePreview"></div>
 
 
 
@@ -83,15 +128,19 @@
 وصف الإعلان
 </label>
 
-<textarea id="description"></textarea>
+<textarea
+id="description"
+placeholder="اكتب تفاصيل الإعلان">
+</textarea>
 
 
 
-<button class="add-button">
+<button class="publish-btn">
 
 نشر الإعلان
 
 </button>
+
 
 
 </form>
