@@ -582,3 +582,98 @@ body{
     font-weight:bold;
 
 }
+
+/* FINAL ADD PAGE FIX */
+
+body{
+    background:#f5f5f5 !important;
+    font-family:'Cairo',Arial,sans-serif;
+}
+
+
+.header{
+    background:#16834b !important;
+    color:white;
+    padding:25px !important;
+    text-align:center;
+}
+
+
+.add-page{
+    width:95% !important;
+    max-width:600px !important;
+    margin:25px auto !important;
+}
+
+
+.ad-form{
+
+    background:white !important;
+
+    padding:25px !important;
+
+    border-radius:18px !important;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.12) !important;
+
+}
+
+
+.ad-form label{
+
+    display:block !important;
+
+    margin-top:15px !important;
+
+    margin-bottom:8px !important;
+
+    font-weight:bold;
+
+}
+
+
+.ad-form input,
+.ad-form select,
+.ad-form textarea{
+
+    width:100% !important;
+
+    height:50px !important;
+
+    padding:12px !important;
+
+    border:1px solid #ddd !important;
+
+    border-radius:12px !important;
+
+    font-family:'Cairo';
+
+}
+
+
+.ad-form textarea{
+
+    height:130px !important;
+
+}
+
+
+.publish-btn{
+
+    width:100% !important;
+
+    height:55px !important;
+
+    margin-top:25px !important;
+
+    border:none !important;
+
+    border-radius:30px !important;
+
+    background:#16834b !important;
+
+    color:white !important;
+
+    font-size:18px !important;
+
+}
