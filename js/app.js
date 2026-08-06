@@ -4,7 +4,7 @@ const adsContainer = document.getElementById("adsContainer");
 function loadAds(){
 
     const ads = Storage.getAds();
-
+    console.log(ads);
     renderAds(ads);
 
 }
