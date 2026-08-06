@@ -84,7 +84,89 @@ body{
     font-weight:bold;
 }
 
+/* ===== Arab Market Ads List ===== */
 
+.container{
+    width:95%;
+    max-width:700px;
+    margin:auto;
+    padding:20px;
+}
+
+
+.ad-item{
+
+    display:flex;
+    background:white;
+
+    gap:15px;
+
+    padding:12px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+    cursor:pointer;
+
+}
+
+
+.ad-item img{
+
+    width:120px;
+
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+
+.ad-info h3{
+
+    font-size:17px;
+
+    margin-bottom:8px;
+
+}
+
+
+.price{
+
+    color:#16834b;
+
+    font-weight:bold;
+
+}
+
+
+
+.add-button{
+
+    position:fixed;
+
+    bottom:20px;
+
+    left:20px;
+
+    background:#16834b;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
 .add-button{
     position:fixed;
     bottom:20px;
