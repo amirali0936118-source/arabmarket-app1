@@ -13,6 +13,7 @@ function loadAds(){
 
 function renderAds(ads){
 
+
     if(!adsContainer) return;
 
 
@@ -23,12 +24,11 @@ function renderAds(ads){
 
         adsContainer.innerHTML = `
         <div class="empty">
-            لا توجد إعلانات حاليا
+        لا توجد إعلانات
         </div>
         `;
 
         return;
-
     }
 
 
@@ -36,52 +36,68 @@ function renderAds(ads){
     ads.forEach(ad=>{
 
 
-        const item = document.createElement("div");
+        const card = document.createElement("div");
 
-        item.className="ad-item";
+        card.className="ad-item";
 
 
-        item.innerHTML = `
 
-        <img src="${ad.image || 'images/logo.png'}">
+        card.innerHTML = `
+
+
+        <img 
+        src="${ad.image || 'images/logo.png'}">
 
 
         <div class="ad-info">
 
-            <h3>${ad.title}</h3>
 
-            <p class="price">
-            ${ad.price} $
-            </p>
-
-            <p>
-            📍 ${ad.city}
-            </p>
+        <h3>
+        ${ad.title}
+        </h3>
 
 
-            <p>
-            ${ad.category}
-            </p>
+        <div class="price">
+
+        ${ad.price} $
 
         </div>
+
+
+        <p>
+        📍 ${ad.city}
+        </p>
+
+
+        <p class="category">
+
+        ${ad.category}
+
+        </p>
+
+
+        </div>
+
 
         `;
 
 
 
-        item.onclick=()=>{
+        card.onclick=function(){
 
             localStorage.setItem(
                 "selectedAd",
                 ad.id
             );
 
+
             location.href="details.html";
 
         };
 
 
-        adsContainer.appendChild(item);
+
+        adsContainer.appendChild(card);
 
 
     });
