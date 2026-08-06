@@ -287,3 +287,105 @@ body{
     font-weight:bold;
 
 }
+
+/* ===== Divar Style Ads ===== */
+
+
+.ads-list,
+#adsContainer{
+
+    width:100%;
+
+}
+
+
+
+.ad-item{
+
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    background:white;
+
+    padding:12px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+
+
+.ad-item img{
+
+
+    width:120px;
+
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+
+
+.ad-info{
+
+
+    flex:1;
+
+}
+
+
+
+.ad-info h3{
+
+
+    font-size:17px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.ad-info .price{
+
+
+    color:#16834b;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+
+}
+
+
+
+.ad-info p{
+
+
+    margin-top:8px;
+
+    color:#777;
+
+}
+
+
+
+.category{
+
+    font-size:14px;
+
+}
